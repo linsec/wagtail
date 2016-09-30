@@ -9,88 +9,172 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wagtail\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 13:25+0000\n"
+"POT-Creation-Date: 2016-10-30 18:40-0700\n"
 "PO-Revision-Date: 2016-05-11 20:33+0000\n"
 "Last-Translator: Matt Westcott <matthew@torchbox.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/torchbox/wagtail/"
 "language/zh_CN/)\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: fields.py:13
 msgid "GIF, JPEG, PNG"
 msgstr "GIF, JPEG, PNG"
 
+#: fields.py:27
 #, python-format
 msgid ""
 "Supported formats: %(supported_formats)s. Maximum filesize: "
 "%(max_upload_size)s."
 msgstr "支持的格式：%(supported_formats)s。最大文件大小：%(max_upload_size)s。"
 
+#: fields.py:34
 #, python-format
 msgid "Supported formats: %(supported_formats)s."
 msgstr "支持的格式：%(supported_formats)s。"
 
+#: fields.py:41
 #, python-format
 msgid "Not a supported image format. Supported formats: %s."
 msgstr "不支持的图片格式。支持类型如下： %s"
 
+#: fields.py:45
 #, python-format
 msgid "Not a valid %s image."
 msgstr "无效的 %s图像"
 
+#: fields.py:49
 #, python-format
 msgid "This file is too big (%%s). Maximum filesize %s."
 msgstr "文件过大 (%%s). 文件大小上限为 %s."
 
+#: fields.py:53
 #, python-format
 msgid "This file is too big. Maximum filesize %s."
 msgstr "文件过大. 文件大小上限为 %s."
 
+#: forms.py:71
 msgid "Filter"
 msgstr "过滤器"
 
+#: forms.py:73
 msgid "Original size"
 msgstr "原始尺寸"
 
+#: forms.py:74
 msgid "Resize to width"
 msgstr "调整宽度到"
 
+#: forms.py:75
 msgid "Resize to height"
 msgstr "调整高度到"
 
+#: forms.py:76
 msgid "Resize to min"
 msgstr "调至最小"
 
+#: forms.py:77
 msgid "Resize to max"
 msgstr "调至最大"
 
+#: forms.py:78
 msgid "Resize to fill"
 msgstr "调至合适"
 
+#: forms.py:81
 msgid "Width"
 msgstr "宽度"
 
+#: forms.py:82
 msgid "Height"
 msgstr "高度"
 
+#: forms.py:83
+msgid "Closeness"
+msgstr ""
+
+#: forms.py:89
+msgid "Add"
+msgstr ""
+
+#: forms.py:89
+#, fuzzy
+#| msgid "Add images"
+msgid "Add/edit images you own"
+msgstr "增加图像"
+
+#: forms.py:90 views/images.py:257
 msgid "Edit"
 msgstr "编辑"
 
+#: forms.py:90
+#, fuzzy
+#| msgid "Add an image"
+msgid "Edit any image"
+msgstr "增加图像"
+
+#: models.py:71
+#, fuzzy
+#| msgid "Title"
+msgid "title"
+msgstr "标题"
+
+#: models.py:73
+msgid "file"
+msgstr ""
+
+#: models.py:75
+#, fuzzy
+#| msgid "Width"
+msgid "width"
+msgstr "宽度"
+
+#: models.py:76
+#, fuzzy
+#| msgid "Height"
+msgid "height"
+msgstr "高度"
+
+#: models.py:77
+msgid "created at"
+msgstr ""
+
+#: models.py:79
+msgid "uploaded by user"
+msgstr ""
+
+#: models.py:83
+msgid "tags"
+msgstr ""
+
+#: templates/wagtailimages/chooser/chooser.html:3 widgets.py:13
 msgid "Choose an image"
 msgstr "选择一个图像"
 
+#: templates/wagtailimages/chooser/chooser.html:8
 msgid "Search"
 msgstr "搜索"
 
+#: templates/wagtailimages/chooser/chooser.html:9
+#: templates/wagtailimages/chooser/chooser.html:50
 msgid "Upload"
 msgstr "上传"
 
+#: templates/wagtailimages/chooser/chooser.html:25
 msgid "Popular tags"
 msgstr "热门标签"
 
+#: templates/wagtailimages/chooser/chooser.html:50
+#, fuzzy
+#| msgid "Upload"
+msgid "Uploading..."
+msgstr "上传"
+
+#: templates/wagtailimages/chooser/results.html:6
+#: templates/wagtailimages/images/results.html:6
 #, python-format
 msgid ""
 "\n"
@@ -105,15 +189,20 @@ msgstr[0] ""
 "            %(counter)s 符合要求。\n"
 "        "
 
+#: templates/wagtailimages/chooser/results.html:13
+#: templates/wagtailimages/images/results.html:15
 msgid "Latest images"
 msgstr "最新图像"
 
+#: templates/wagtailimages/chooser/select_format.html:3
 msgid "Choose a format"
 msgstr "选择格式"
 
+#: templates/wagtailimages/chooser/select_format.html:17
 msgid "Insert image"
 msgstr "插入图像"
 
+#: templates/wagtailimages/homepage/site_summary_images.html:5
 #, python-format
 msgid ""
 "\n"
@@ -128,110 +217,176 @@ msgstr[0] ""
 "        <span>%(total)s</span> 图像\n"
 "    "
 
+#: templates/wagtailimages/images/_file_field.html:8
 msgid "Change image file:"
 msgstr "修改图像文件"
 
+#: templates/wagtailimages/images/add.html:4
+#: templates/wagtailimages/images/index.html:27
 msgid "Add an image"
 msgstr "增加图像"
 
+#: templates/wagtailimages/images/add.html:20
 msgid "Add image"
 msgstr "增加图像"
 
+#: templates/wagtailimages/images/add.html:34
+#: templates/wagtailimages/images/edit.html:52
 msgid "Save"
 msgstr "保存"
 
+#: templates/wagtailimages/images/confirm_delete.html:4
+#: templates/wagtailimages/images/confirm_delete.html:7
+#: templates/wagtailimages/images/edit.html:54
 msgid "Delete image"
 msgstr "删除图像"
 
+#: templates/wagtailimages/images/confirm_delete.html:15
 msgid "Are you sure you want to delete this image?"
 msgstr "确认删除此图像？"
 
+#: templates/wagtailimages/images/confirm_delete.html:18
 msgid "Yes, delete"
 msgstr "是的，删除吧。"
 
+#: templates/wagtailimages/images/edit.html:3
+#: templates/wagtailimages/images/url_generator.html:4
 #, python-format
 msgid "Editing image %(title)s"
 msgstr "编辑图像%(title)s"
 
+#: templates/wagtailimages/images/edit.html:31
 msgid "Editing"
 msgstr "编辑"
 
+#: templates/wagtailimages/images/edit.html:61
 msgid "Focal point (optional)"
 msgstr "焦点（可选）"
 
+#: templates/wagtailimages/images/edit.html:62
 msgid ""
 "To define this image's most important region, drag a box over the image "
 "below."
 msgstr "定义此图像的重要区域，拖动下面的盒子到图像上。"
 
+#: templates/wagtailimages/images/edit.html:62
+msgid "Current focal point shown"
+msgstr ""
+
+#: templates/wagtailimages/images/edit.html:81
 msgid "URL Generator"
 msgstr "URL生成器"
 
+#: templates/wagtailimages/images/edit.html:88
 msgid "Max dimensions"
 msgstr "最大尺寸"
 
+#: templates/wagtailimages/images/edit.html:90
 msgid "Filesize"
 msgstr "文件大小"
 
+#: templates/wagtailimages/images/edit.html:91
 msgid "File not found"
 msgstr "未找到文件"
 
+#: templates/wagtailimages/images/index.html:5
+#: templates/wagtailimages/images/index.html:24 wagtail_hooks.py:44
+#: wagtail_hooks.py:112
 msgid "Images"
 msgstr "图像"
 
+#: templates/wagtailimages/images/results.html:33
 #, python-format
 msgid "Sorry, no images match \"<em>%(query_string)s</em>\""
 msgstr "对不起，没有符合\"<em>%(query_string)s</em>\"的图像。"
 
+#: templates/wagtailimages/images/results.html:39
+#, python-format
+msgid ""
+"You haven't uploaded any images in this collection. Why not <a href="
+"\"%(wagtailimages_add_image_url)s\">upload one now</a>?"
+msgstr ""
+"你还没有上传任何图片。为什么不 <a href=\"%(wagtailimages_add_image_url)s\">上"
+"传一张</a>?"
+
+#: templates/wagtailimages/images/results.html:41
+#, python-format
+msgid ""
+"You haven't uploaded any images. Why not <a href="
+"\"%(wagtailimages_add_image_url)s\">upload one now</a>?"
+msgstr ""
+"你还没有上传任何图片。为什么不 <a href=\"%(wagtailimages_add_image_url)s\">上"
+"传一张</a>?"
+
+#: templates/wagtailimages/images/url_generator.html:7
 msgid "Generating URL"
 msgstr "生成URL"
 
+#: templates/wagtailimages/images/url_generator.html:24
 msgid "URL"
 msgstr "URL"
 
+#: templates/wagtailimages/images/url_generator.html:27
 msgid "Preview"
 msgstr "预览"
 
+#: templates/wagtailimages/images/url_generator.html:33
 msgid ""
 "Note that images generated larger than the screen will appear smaller when "
 "previewed here, so they fit the screen."
 msgstr ""
 "备注：生成的图片大于屏幕时，在预览时可能显示会小一些。因为是适应屏幕的。"
 
+#: templates/wagtailimages/images/usage.html:3
 #, python-format
 msgid "Usage of %(title)s"
 msgstr "%(title)s的使用情况"
 
+#: templates/wagtailimages/images/usage.html:5
 msgid "Usage of"
 msgstr "使用情况"
 
+#: templates/wagtailimages/images/usage.html:16
 msgid "Title"
 msgstr "标题"
 
+#: templates/wagtailimages/images/usage.html:17
 msgid "Parent"
 msgstr "父节点"
 
+#: templates/wagtailimages/images/usage.html:18
 msgid "Type"
 msgstr "类型"
 
+#: templates/wagtailimages/images/usage.html:19
 msgid "Status"
 msgstr "状态"
 
+#: templates/wagtailimages/images/usage.html:26
 msgid "Edit this page"
 msgstr "编辑此页面"
 
+#: templates/wagtailimages/multiple/add.html:3
 msgid "Add multiple images"
 msgstr "增加多个图像"
 
+#: templates/wagtailimages/multiple/add.html:11
 msgid "Add images"
 msgstr "增加图像"
 
+#: templates/wagtailimages/multiple/add.html:16
 msgid "Drag and drop images into this area to upload immediately."
 msgstr "拖曳多个图像到此区域来快速上传。"
 
+#: templates/wagtailimages/multiple/add.html:21
 msgid "Or choose from your computer"
 msgstr "或者打开选择框"
 
+#: templates/wagtailimages/multiple/add.html:27
+msgid "Add to collection:"
+msgstr "添加到文件夹"
+
+#: templates/wagtailimages/multiple/add.html:58
 msgid ""
 "Upload successful. Please update this image with a more appropriate title, "
 "if necessary. You may also delete the image completely if the upload wasn't "
@@ -239,46 +394,85 @@ msgid ""
 msgstr ""
 "上传成功。如有必要，可为图片填写更合适的标题。如果不需要的话，也可以删除。"
 
+#: templates/wagtailimages/multiple/add.html:59
 msgid "Sorry, upload failed."
 msgstr "对不起啊，上传失败。"
 
+#: templates/wagtailimages/multiple/add.html:61
+msgid "Server Error"
+msgstr "服务器错误"
+
+#: templates/wagtailimages/multiple/add.html:62
+msgid "Report this error to your webmaster with the following information:"
+msgstr "请将下面信息报告给网站管理员"
+
+#: templates/wagtailimages/multiple/add.html:65
+msgid "Image updated."
+msgstr "图片已更新。"
+
+#: templates/wagtailimages/multiple/edit_form.html:14
 msgid "Update"
 msgstr "更新"
 
+#: templates/wagtailimages/multiple/edit_form.html:15 views/images.py:138
 msgid "Delete"
 msgstr "删除"
 
+#: templates/wagtailimages/permissions/includes/image_permissions_formset.html:4
+msgid "Image permissions"
+msgstr "图片权限"
+
+#: templates/wagtailimages/permissions/includes/image_permissions_formset.html:5
+msgid "Add an image permission"
+msgstr "增加图像"
+
+#: views/images.py:40 views/images.py:46
 msgid "Search images"
 msgstr "搜索图片"
 
+#: views/images.py:116
 #, python-brace-format
 msgid "Image '{0}' updated."
 msgstr "图片 '{0}' 已更新。"
 
+#: views/images.py:117
 msgid "Edit again"
 msgstr "再次编辑"
 
+#: views/images.py:121
 msgid "The image could not be saved due to errors."
 msgstr "图片无法保存。出现错误。"
 
+#: views/images.py:136
 msgid ""
 "The source image file could not be found. Please change the source or delete "
 "the image."
 msgstr "无法找到源图像文件。请修改源或者删除图像。"
 
+#: views/images.py:231
 #, python-brace-format
 msgid "Image '{0}' deleted."
 msgstr "图片'{0}' 已删除。"
 
+#: views/images.py:256
 #, python-brace-format
 msgid "Image '{0}' added."
 msgstr "图片'{0}'已添加"
 
+#: views/images.py:261
 msgid "The image could not be created due to errors."
 msgstr "无法创建图像，出现错误。"
 
+#: wagtail_hooks.py:131
+#, python-format
+msgid "%(count)s image"
+msgid_plural "%(count)s images"
+msgstr[0] ""
+
+#: widgets.py:14
 msgid "Choose another image"
 msgstr "选择另一个图像"
 
+#: widgets.py:15
 msgid "Edit this image"
 msgstr "编辑此图像"

@@ -7,17 +7,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wagtail\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 13:25+0000\n"
+"POT-Creation-Date: 2016-10-31 02:09-0700\n"
 "PO-Revision-Date: 2016-03-01 18:57+0000\n"
 "Last-Translator: Matt Westcott <matthew@torchbox.com>\n"
 "Language-Team: Chinese (http://www.transifex.com/torchbox/wagtail/language/"
 "zh/)\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: models.py:60
+msgid "hostname"
+msgstr "主机名"
+
+#: models.py:62
+msgid "port"
+msgstr "端口"
+
+#: models.py:65
 msgid ""
 "Set this to something other than 80 if you need a specific port number to "
 "appear in URLs (e.g. development on port 8000). Does not affect request "
@@ -26,25 +35,266 @@ msgstr ""
 "如果你需要指定端口，请选择一个有别于80的端口(比如开发端口8000)。 不影响接受请"
 "求 （端口转发仍然有效）"
 
+#: models.py:70
+msgid "site name"
+msgstr "站点名"
+
+#: models.py:74
+msgid "Human-readable name for the site."
+msgstr "该站点可读性的名字"
+
+#: models.py:76
+msgid "root page"
+msgstr "根页面"
+
+#: models.py:78
+msgid "is default site"
+msgstr "默认站点"
+
+#: models.py:81
 msgid ""
 "If true, this site will handle requests for all other hostnames that do not "
 "have a site entry of their own"
 msgstr ""
 "如果是真的，这个网站将处理没有一个属于自己的主机名的其他所有主机名的请求"
 
+#: models.py:89
+msgid "site"
+msgstr "站点"
+
+#: models.py:90
+msgid "sites"
+msgstr "站点"
+
+#: models.py:194
+#, python-format
+msgid ""
+"%(hostname)s is already configured as the default site. You must unset that "
+"before you can save this site as default."
+msgstr ""
+"%(hostname)s 已经配置成默认站点。在设置之前请先取消默认站点。"
+
+#: models.py:301
+msgid "title"
+msgstr "标题"
+
+#: models.py:303
 msgid "The page title as you'd like it to be seen by the public"
 msgstr "页面标题，你想被大众所看到的"
 
+#: models.py:308 models.py:315
+msgid "slug"
+msgstr "slug(url路径)"
+
+#: models.py:311 models.py:317
 msgid ""
 "The name of the page as it will appear in URLs e.g http://domain.com/blog/"
 "[my-slug]/"
 msgstr "一个出现在URL的名字 比如 http://domain.com/blog/[my-slug]/"
 
+#: models.py:321
+msgid "content type"
+msgstr "内容类型"
+
+#: models.py:325 models.py:1013
+msgid "live"
+msgstr "实时的"
+
+#: models.py:327
+msgid "has unpublished changes"
+msgstr "已取消修改"
+
+#: models.py:331
+msgid "URL path"
+msgstr "URL路径"
+
+#: models.py:334
+msgid "owner"
+msgstr "拥有者"
+
+#: models.py:343
+msgid "page title"
+msgstr "网页标题"
+
+#: models.py:346
 msgid ""
 "Optional. 'Search Engine Friendly' title. This will appear at the top of the "
 "browser window."
 msgstr "可选 ‘搜索引擎友好’ 标题。 这会显示在浏览器窗口顶部"
 
+#: models.py:349
+msgid "show in menus"
+msgstr "在菜单中显示"
+
+#: models.py:351
 msgid ""
 "Whether a link to this page will appear in automatically generated menus"
 msgstr "一个链接到这页的链接会显示在自动生成的菜单中"
+
+#: models.py:353
+msgid "search description"
+msgstr "搜索描述"
+
+#: models.py:356
+msgid "go live date/time"
+msgstr "生效起始日期时间"
+
+#: models.py:357 models.py:363
+msgid "Please add a date-time in the form YYYY-MM-DD hh:mm."
+msgstr "请按YYYY-MM-DD hh:mm 格式添加日期日间"
+
+#: models.py:362
+msgid "expiry date/time"
+msgstr "到期日期时间"
+
+#: models.py:367 models.py:1004
+msgid "expired"
+msgstr "过期的"
+
+#: models.py:369
+msgid "locked"
+msgstr "锁定的"
+
+#: models.py:372
+msgid "first published at"
+msgstr "第一次发布于"
+
+#: models.py:378
+msgid "latest revision created at"
+msgstr "最新版本创建于"
+
+#: models.py:473
+msgid "This slug is already in use"
+msgstr "该slug已经被使用"
+
+#: models.py:1006
+msgid "scheduled"
+msgstr "调度"
+
+#: models.py:1008
+msgid "draft"
+msgstr "草稿"
+
+#: models.py:1011
+msgid "live + draft"
+msgstr "实时 + 草稿"
+
+#: models.py:1260
+msgid "Default"
+msgstr "默认的"
+
+#: models.py:1368 models.py:1401 models.py:1538 models.py:1789
+msgid "page"
+msgstr "页面"
+
+#: models.py:1369
+msgid "pages"
+msgstr "页面"
+
+#: models.py:1403
+msgid "submitted for moderation"
+msgstr "提交至缓存"
+
+#: models.py:1407
+msgid "created at"
+msgstr "创建于"
+
+#: models.py:1409
+msgid "user"
+msgstr "用户"
+
+#: models.py:1412
+msgid "content JSON"
+msgstr "内容 JSON"
+
+#: models.py:1413
+msgid "approved go live at"
+msgstr "允许生效"
+
+#: models.py:1518
+msgid "page revision"
+msgstr "页面修订"
+
+#: models.py:1519
+msgid "page revisions"
+msgstr "页面修订"
+
+#: models.py:1523
+msgid "Add"
+msgstr "添加"
+
+#: models.py:1523
+msgid "Add/edit pages you own"
+msgstr "添加/编辑你的页面"
+
+#: models.py:1524
+msgid "Edit"
+msgstr "编辑"
+
+#: models.py:1524
+msgid "Edit any page"
+msgstr "编辑页面"
+
+#: models.py:1525
+msgid "Publish"
+msgstr "发布"
+
+#: models.py:1525
+msgid "Publish any page"
+msgstr "发布页面"
+
+#: models.py:1526
+msgid "Lock"
+msgstr "锁定"
+
+#: models.py:1526
+msgid "Lock/unlock any page"
+msgstr "锁定/解锁页面"
+
+#: models.py:1537 models.py:1868
+msgid "group"
+msgstr "组"
+
+#: models.py:1540
+msgid "permission type"
+msgstr "权限类型"
+
+#: models.py:1547
+msgid "group page permission"
+msgstr "组页面权限"
+
+#: models.py:1548
+msgid "group page permissions"
+msgstr "组页面权限"
+
+#: models.py:1790
+msgid "password"
+msgstr "密码"
+
+#: models.py:1793
+msgid "page view restriction"
+msgstr "页面读限制"
+
+#: models.py:1794
+msgid "page view restrictions"
+msgstr "页面读限制"
+
+#: models.py:1809
+msgid "name"
+msgstr "名字"
+
+#: models.py:1832 models.py:1847 models.py:1874
+msgid "collection"
+msgstr "文件夹"
+
+#: models.py:1833
+msgid "collections"
+msgstr "文件夹"
+
+#: models.py:1880
+msgid "permission"
+msgstr "权限"
+
+#: models.py:1893
+msgid "group collection permission"
+msgstr "组文件夹权限"
